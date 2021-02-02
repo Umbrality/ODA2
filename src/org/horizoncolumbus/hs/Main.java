@@ -16,7 +16,7 @@ public class Main {
 //        numbers[3] = 4;
 //        numbers[4] = 5;
         //add data to the array
-        for (int i = 1; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             numbers[i] = i + 1;
         }
 
@@ -24,12 +24,19 @@ public class Main {
         //sum all the numbers in the array
         int sum = 0;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++){
             sum = sum + numbers[i];
         }
 
-        System.out.println(numbers[0] + " + " + numbers[1] + " + " + numbers[2] + " + " + numbers[3] + " + " + numbers[4] + " = " + sum);
+        for (int i = 0; i < 5; i++) {
+            if (i == 4) {
+                System.out.println(numbers[i] + " = " + sum);
+            }
+            else{
+                System.out.print(numbers[i] + " + " );
+            }
+//        System.out.println(numbers[0] + " + " + numbers[1] + " + " + numbers[2] + " + " + numbers[3] + " + " + numbers[4] + " = " + sum);
 
-        System.out.println();
-
-    }}
+        }
+    }
+}
